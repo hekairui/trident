@@ -1,0 +1,33 @@
+{
+  "name": "general",
+  "version": "0.0.1",
+  "private": "true",
+  "repository": "ssh://git@github.com/ricebook/general.git",
+  "author": "",
+  "license": "Copyright 2014 Serious Company Limited",
+  "dependencies": {
+    "bower": ">=1.3.1",
+    "coffee-script": ">=1.7.x",
+    "coffee-gulp": ">=0.0.1",
+    "gulp": ">=3.5.x",
+    "gulp-util": ">=2.2.x",
+    "gulp-coffee": ">=1.4.x",
+    "gulp-jade": ">=0.4.2",
+    "gulp-livereload": ">=1.2.0",
+    "gulp-ng-html2js": ">=0.1.6",
+    "gulp-minify-html": ">=0.1.1",
+    "gulp-concat": ">=2.2.0",
+    "gulp-clean": ">=0.2.4",
+    "gulp-uglify": ">=0.2.1",
+    "stylus": ">=0.42.3",
+    "jade": ">=1.3.0",
+    "node-static": ">=0.7.3",
+    "gulp-plumber": ">=0.6.0",
+    "gulp-rename": ">=1.2.0",
+    "gulp-stylus": ">=0.2.0",
+    "nib": ">=1.0.2",
+    "gulp-run-sequence": ">=0.3.2",
+    "streamqueue": "0.0.7",
+    "yargs": "~1.2.2"
+  }
+}

@@ -1,0 +1,37 @@
+div.ip-view
+  div.container-fluid
+    div.row
+      div
+        breadcrumb
+          li.active IP
+    div.row.table-form-container
+      div.col-md-8
+        div.panel.panel-default 
+          div.panel-heading
+            div.panel-title.col-sm-3 IP列表
+            div.col-sm-offset-6.col-sm-3
+              input(type="text" placeholder="查询" ng-model="filterText" ng-model-options="{ debounce: 100 }")
+          div.panel-body
+            div.loading(ng-hide="ipList")
+              i.fa.fa-spinner.fa-spin.fa-5x
+            div.table-responsive(ng-show="ipList")
+              table.table.table-hover
+                thead
+                  tr
+                    th(width="80") ID
+                    th(width) IP地址
+                    th(width="150") 是否启用
+                tbody
+                  tr(ng-repeat="ip in ipList | filter: filterText")
+                    td {{ip.id}}
+                    td {{ip.ip_address}}
+                    td 
+                      input(type="checkbox" ng-checked="ip.state" ng-model="ip.setting" ng-click="change(ip)")
+                                                
+          div.panel-footer
+            div.col-sm-2
+              button.btn.btn-primary.btn-sm(ng-click="add()") 
+                i.fa.fa-plus
+                | 添加
+
+      div.col-md-4.ui-view

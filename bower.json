@@ -1,0 +1,27 @@
+{
+  "name": "general",
+  "version": "0.0.0",
+  "authors": [
+    "Eric Chen <zhenxi.chen@gmail.com>"
+  ],
+  "dependencies": {
+    "angular": "",
+    "angular-animate": "",
+    "angular": "",
+    "angular-route": "",
+    "angular-ui-router": "",
+    "angular-bootstrap": "",
+    "bootstrap-stylus": "",
+    "jquery": "",
+    "font-awesome" : "git://github.com/FortAwesome/Font-Awesome.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ], 
+  "private": true
+}
